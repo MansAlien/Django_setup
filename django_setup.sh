@@ -9,9 +9,9 @@ echo django_setup.sh >> .gitignore
 rm -r project/settings.py
 rm -r project/wsgi.py
 rm -r project/urls.py
-mv settings.py proejct/
-mv wsgi.py proejct/
-mv urls.py proejct/
+mv settings.py project/
+mv wsgi.py project/
+mv urls.py project/
 git init
 git add .
 git commit -m "Initial commit"
