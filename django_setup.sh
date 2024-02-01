@@ -5,7 +5,10 @@ pip install --upgrade pip
 pip install -r requirements.txt
 django-admin startproject project .
 echo .venv > .gitignore
+echo .env >> .gitignore
 echo django_setup.sh >> .gitignore
+echo __pycache__/ >> .gitignore
+echo db.sqlite3 >> .gitignore
 rm -r project/settings.py
 rm -r project/wsgi.py
 rm -r project/urls.py
