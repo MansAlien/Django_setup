@@ -3,6 +3,8 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
+nodeenv -p
+npm install -g npm
 django-admin startproject project .
 echo .venv > .gitignore
 echo .env >> .gitignore
