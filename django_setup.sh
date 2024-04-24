@@ -20,9 +20,6 @@ pip install --upgrade pip || handle_error "Failed to upgrade pip"
 # Install Python dependencies
 pip install -r requirements.txt || handle_error "Failed to install Python dependencies"
 
-# Initialize Node.js environment
-nodeenv -p || handle_error "Failed to initialize Node.js environment"
-
 # Install or upgrade npm
 npm install -g npm || handle_error "Failed to install or upgrade npm"
 
@@ -49,7 +46,5 @@ git branch -M main || handle_error "Failed to rename default branch"
 # Install Tailwind CSS
 npm install -D tailwindcss || handle_error "Failed to install Tailwind CSS"
 
-# Initialize Tailwind CSS configuration
-npx tailwindcss init || handle_error "Failed to initialize Tailwind CSS configuration"
-
 echo "Setup completed successfully."
+
