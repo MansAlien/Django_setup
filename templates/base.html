@@ -1,3 +1,4 @@
+{% load compress %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +17,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <!-- The title of the Website -->
         <title> {% block title %}  {% endblock title %} </title>
+
         <!-- Style sheet -->
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% compress css %}
+          <link rel="stylesheet" href="{% static 'src/output.css' %}">
+        {% endcompress %}
     </head>
 <body>
     <div>
