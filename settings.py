@@ -48,11 +48,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     #3rd party packs
     'crispy_forms',
     'crispy_bootstrap5',
     "django_htmx",
     'compressor',
+
     # my app
     # "accounts.apps.AccountsConfig",
 ]

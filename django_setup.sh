@@ -21,7 +21,10 @@ pip install --upgrade pip || handle_error "Failed to upgrade pip"
 pip install -r requirements.txt || handle_error "Failed to install Python dependencies"
 
 # Install or upgrade npm
-npm install -g npm || handle_error "Failed to install or upgrade npm"
+sudo npm install -g npm || handle_error "Failed to install or upgrade npm"
+
+# Install compressor
+python -m pip install django-compressor || handle_error "Failed to install compressor"
 
 # Create Django project
 django-admin startproject project . || handle_error "Failed to create Django project"
@@ -45,6 +48,9 @@ git branch -M main || handle_error "Failed to rename default branch"
 
 # Install Tailwind CSS
 npm install -D tailwindcss || handle_error "Failed to install Tailwind CSS"
+
+# Install flowbite
+npm install flowbite || handle_error "Failed to install Flowbite CSS"
 
 echo "Setup completed successfully."
 
